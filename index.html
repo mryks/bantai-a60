@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>bantai a60</title>
+  <meta name="description" content="bantai a60 — pembahasan soal ujian aktuaria A60.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230d9488'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3EA6%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=20261112200001">
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Buka daftar isi" aria-expanded="false" aria-controls="sidebar">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="brand">
+      <span class="logo" aria-hidden="true">A60</span>
+      <div class="brand-text">
+        <h1>bantai a60</h1>
+        <p class="updated" id="updated">Memuat…</p>
+      </div>
+    </div>
+    <div class="toolbar">
+      <div class="zoom" role="group" aria-label="Zoom">
+        <button class="icon-btn" id="zoomOut" aria-label="Perkecil">−</button>
+        <button class="zoom-level" id="zoomFit" title="Sesuaikan lebar">100%</button>
+        <button class="icon-btn" id="zoomIn" aria-label="Perbesar">+</button>
+      </div>
+      <a class="btn-primary" id="downloadBtn" href="bantai-a60.pdf?v=20261112200001" download="bantai-a60.pdf" aria-label="Download PDF" title="Download PDF">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Download PDF</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Daftar isi">
+      <div class="search">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="search" id="search" placeholder="Cari soal… (mis. 12)" autocomplete="off" aria-label="Cari soal">
+      </div>
+      <p class="toc-title">Daftar isi <span id="tocCount"></span></p>
+      <nav><ul class="toc" id="toc"></ul></nav>
+      <p class="toc-empty" id="tocEmpty" hidden>Soal tidak ditemukan.</p>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <main class="viewer-wrap">
+      <div class="viewer" id="viewer" tabindex="0" aria-label="Penampil PDF">
+        <div class="loading" id="loading"><span class="spinner"></span> Memuat PDF…</div>
+        <div class="pages" id="pages"></div>
+      </div>
+      <div class="page-pill" id="pagePill" aria-live="polite">Hal. – / –</div>
+    </main>
+  </div>
+
+  <script>window.BUILD_VERSION = "20261112200001";</script>
+  <script type="module" src="app.js?v=20261112200001"></script>
+</body>
+</html>
